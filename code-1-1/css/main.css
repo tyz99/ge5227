@@ -1,0 +1,131 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #242424;
+    color: white;
+}
+/* 隐藏滚动条但保留拖动功能 */
+::-webkit-scrollbar {
+    width: 0;  /* 隐藏垂直滚动条 */
+    height: 0;  /* 隐藏水平滚动条 */
+  }
+
+#sidePanel {
+    height: 44%;
+    margin: auto;
+    padding: 5px;
+    width: 98%;
+}
+
+#chartPanel {
+    font: Avenir Next;
+    line-height: 1.5em;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    background-color: #242424;
+    
+}
+#chartPanelDonut {
+    font: Avenir Next;
+    line-height: 1.5em;
+    overflow: auto;
+    padding: 10px;
+    width: 475px;
+    margin: auto;
+}
+#piechart{
+    width: 60%;
+    float: right;
+    margin: auto;
+    height: 380px;
+}
+#stats {
+    float: left;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+#cardText {
+    float: left;
+    width: 200px;
+}
+.tab {
+    width: 100%;
+    height: 45%;
+    background-color: #be0c0c;
+}
+
+#population {
+    width: 40%;
+    float: left;
+    margin: auto;
+    height: 380px;
+    background-color: #242424;
+}
+#inco_race{
+    width: 60%;
+    float: right;
+    margin: auto;
+    height: 380px;
+}
+#inco_slider{
+    width: 65%;
+    float: left;
+    margin: auto;
+    height: 380px;
+}
+
+#chart {
+    margin: auto;
+    color:#d9d7db00;
+    height:100%;
+}
+#silder-title{
+    text-align: center;
+    color:rgb(104, 104, 104);
+    font-size: 6px;
+
+}
+
+#viewDiv,
+#viewDiv2, 
+#viewDiv3 {
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+    width: 100vw;
+}
+
+#income{
+    float: left;
+    height: 450px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+#slider-card{
+    height: 380px;
+    width: 50%;
+    float:right;
+    
+}
+#race {
+    float: right;
+    height: 480px;
+    width: 35%;
+    /* background-color: aqua; */
+}
+
+
+
+/* #panel2,
+#panel3 {
+    float: right;
+    height: auto;
+    width: 10%;
+    background-color: rgb(170, 255, 0);
+
+} */

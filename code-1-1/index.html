@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>GE5227 Final Project Group 5</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/dark/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.0.0-beta.52/calcite.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.0.0-beta.52/calcite.esm.js"></script>
+    <script nomodule="" src="https://js.arcgis.com/calcite-components/1.0.0-beta.52/calcite.js"></script>
+    <script src="js/age.js"></script>
+    <script src="js/income.js"></script>
+    <script src="js/race.js"></script>
+
+</head>
+<body>
+    <!-- container for the map -->
+        <calcite-tabs bordered layout="center" position="above" theme="dark">
+          <calcite-tab-nav slot="tab-nav">
+            <calcite-tab-title active>Age & Gender</calcite-tab-title>
+            <calcite-tab-title>Income</calcite-tab-title>
+            <calcite-tab-title>Race</calcite-tab-title>
+          </calcite-tab-nav>
+          <calcite-tab active>
+            <div id="viewDiv"></div>
+          </calcite-tab>
+          <calcite-tab>
+            <div id="viewDiv2"></div>
+          </calcite-tab>
+          <calcite-tab>
+            <div id="viewDiv3"></div>
+          </calcite-tab>
+        </calcite-tabs>
+
+    <!-- container for the diagrams -->
+        <!-- <calcite-tab bordered active="" class="tab" theme="dark">  -->
+            <div id="population" >
+                
+                    <div id="chartPanel"><canvas id="chart"  height=400 width=700></canvas></div>
+                
+            </div>
+            <div id ="inco_race">
+              <div id="inco_slider">
+                  <div id="income">
+                          <!-- <div id="panel2"></div> -->
+                          <canvas id="panel2" width="600" height="400"></canvas>
+                  </div>
+                 <div id="slider-card">
+                  <div id="silder-title">
+                   <p>Median Income Legend</p>
+                  </div>
+                  <div id="containerDiv">
+                    <div id="slider" ></div>
+                  </div>
+                 </div>
+              </div>
+              
+                  <div id="race">
+                          <!-- <div id="panel3"></div> -->
+                          <canvas id="panel3" width="400" height="400"></canvas>
+                  </div>
+              
+            </div>
+            
+        <!-- </calcite-tab> -->
+
+
+    <!-- <iframe width="100%" height="460" src="https://www.epi.org?p=208746&view=embed&embed_template=charts_v2013_08_21&embed_date=20230316&onp=209035&utm_source=epi_press&utm_medium=chart_embed&utm_campaign=charts_v2" frameborder="0"></iframe> -->
+
+</body>
+
+</html>
